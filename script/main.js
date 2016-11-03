@@ -87,7 +87,7 @@ function login(func) {
         removeClassName(layout, 'z-show');
     });
 
-    var url = 'http://study.163.com/webDev/login.htm';
+    var url = '//study.163.com/webDev/login.htm';
     /**
      * 回调函数，ajax请求成功时调用
      * 功能：登录成功时，关闭弹窗，设置cookie，并执行func（如果传入的话）
@@ -150,7 +150,7 @@ function login(func) {
      * 请求成功，设置关注cookie，切换已关注状态
      */
     function followRequest(){
-        var url = 'http://study.163.com/webDev/attention.htm';
+        var url = '//study.163.com/webDev/attention.htm';
         /* 回调函数，请求成功，设置关注cookie，切换已关注状态 */
         function followResponse(response) {
             if(response == 1){
@@ -252,7 +252,7 @@ function login(func) {
         type = 10;          // 课程类型
 
     var ul = document.getElementById('courseslist');
-    var url = 'http://study.163.com/webDev/couresByCategory.htm';
+    var url = '//study.163.com/webDev/couresByCategory.htm';
     /* 先获取初始课程列表 */
     get(url+'?pageNo='+pageNo+'&psize='+psize+'&type='+type, addItems);
     /**
@@ -468,7 +468,7 @@ function login(func) {
  */
 (function () {
     var list = document.getElementById('hotlist'),
-        url = 'http://study.163.com/webDev/hotcouresByCategory.htm',
+        url = '//study.163.com/webDev/hotcouresByCategory.htm',
         htmlStr = '';
     /**
      * 回调函数，请求成功时执行
